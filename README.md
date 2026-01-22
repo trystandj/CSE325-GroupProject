@@ -1,4 +1,4 @@
-# CSE325-GroupProject
+# Med Vehicle
 CSE325-GroupProject
 
 # Team Members
