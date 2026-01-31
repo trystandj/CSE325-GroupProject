@@ -12,7 +12,6 @@
             <h3 class="mb-0">Add New Vehicle</h3>
         </div>
         <div class="card-body">
-            @* We bind to the EditContext to enable our OnFieldChanged logic *@
             <EditForm EditContext="editContext" OnValidSubmit="HandleValidSubmit">
                 <DataAnnotationsValidator />
 
@@ -106,7 +105,7 @@
     {
         @* This asks the EditContext to revalidate all fields. If there are no erros with the form we flip the isError flag. *@
         isError = !editContext!.Validate();
-        @* We re-render the component to make the button enabled/disabled based on validation status *@
+        @* We re-render the component to make the save button enabled/disabled based on validation status *@
         StateHasChanged();
     }
 
